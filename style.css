@@ -18,7 +18,7 @@ header{
 }
 nav{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     padding-top: 30px;  
     
@@ -54,6 +54,7 @@ a{
     border-radius: 5px;
     padding: 10px 20px;
     margin-right: 40px;
+    margin-left:450px ;
 }
  .login img{
     width: 20px;
@@ -125,7 +126,9 @@ a{
 .player img{
     width: 100%;
 }
+
 /* top clubs style */
+
 h2{
     text-align: center;
 }
@@ -135,15 +138,17 @@ h2 hr{
 }
 .top-clubs{
     display: flex;
+   
+}
+.club{
+    height: 100%;
+    width: 100%;
+    text-align: center;
 }
 .club-title,.club-details {
     text-align: center;
 }
-.club img{
-    padding-left: 75px;
-    height: 210px;
-    width: 200px;
-}
+
 .see-more{
     
     padding: 5px 10px;
@@ -195,7 +200,7 @@ footer {
    
 }
 .logo img{
-    width: 443px;
+    width: 400px;
     height: 100px;
 }
 .social-media img{
@@ -205,6 +210,76 @@ footer {
 
 /* responsive style */
  
+@media screen and (max-width:688px) {
+    
+    .container{
+        width: 100%;
+    }
+    nav {
+      
+        flex-direction: column;
+    }
+    .login{
+    margin-right:440px ;
+    }
+    .banner {
+       
+        flex-direction: column;
+        align-items: center;
+    }
+    .thumbnail img {
+     
+        width: 100%;
+    }
+    .banner-title h1 {
+        font-size: 30px;
+        text-align: center;
+      
+    }
+    .live-link {
+        display: block;
+        width: 36%;
+        margin: 50px auto;
+    }
+   
+    .menu ul{
+       
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .players, .clubs{
+        
+        grid-template-columns: repeat(1,1fr);
+       
+    }
+    .club img{
+        padding-left: -75px;
+        height: 210px;
+        width: 100%;
+    }
+    h2{
+        font-size: 15px;
+    }
+    h2 hr{
+        width:200px;
+        
+    }
+    .logo img{
+        width: 150px;
+        height: 80px;
+    }
+    .up-match{
+        width: 150px;
+    }
+    .logo img {
+     
+        width: 150px;
+    }
+    footer{
+        padding-bottom: 30px;
+    }
+}
  
 
 
